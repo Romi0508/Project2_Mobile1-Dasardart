@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'First App',
+      home: Scaffold(
+        backgroundColor: Colors.yellow,
+        appBar: AppBar(
+          backgroundColor: Colors.blueAccent,
+          title: Text('BIODATA'),
+        ),
+        body: Center(
+          child: Column(
+            children: [
+              Text('Nama :Romi'),
+              Text('Kelas : 6Sia11'),
+              Text('Nirm : 2018020672'),
+              Text('Tempat, Tanggal Lahir : Tanjung Morawa, 05 Nov 1998'),
+              Text('Alamat:  Tanjung Morawa'),
+              Text('Status : Mahasiswa'),
+              Text('\n\n'),
+              Image.network('https://scontent.fkno8-1.fna.fbcdn.net/v/t31.0-0/c23.0.206.206a/p206x206/20988439_1944390185818702_1207250366365544510_o.jpg?_nc_cat=103&ccb=3&_nc_sid=da31f3&_nc_eui2=AeG2nXCKm6CoPb6dgfCATJTL8qrkDyVpJkPyquQPJWkmQ9gmEc4KMMQydEZeDFurcesEWlGYMxpDJnSxKbidmA-I&_nc_ohc=K3F4MjduwwcAX-I2247&_nc_ht=scontent.fkno8-1.fna&tp=27&oh=df53a48281828dc1ffa3b98d351719bd&oe=605BDAE5'),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
